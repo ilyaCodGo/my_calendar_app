@@ -21,6 +21,16 @@ version: 1.0.0+1
 environment:
   sdk: ^3.11.4
 
+   # Пакет для красивого календаря
+  table_calendar: ^3.1.1
+  
+  # Пакет для хранения данных на телефоне (локальная база данных)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Пакет для иконок (стандартный, но убедимся, что он есть)
+  cupertino_icons: ^1.0.2
+
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
@@ -30,6 +40,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # Пакет для красивого календаря
+  table_calendar: ^3.1.1
+  
+  # Пакет для хранения данных на телефоне (локальная база данных)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Пакет для иконок (стандартный, но убедимся, что он есть)
+  cupertino_icons: ^1.0.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
