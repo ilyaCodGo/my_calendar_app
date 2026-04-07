@@ -21,6 +21,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return NewWidget();
+  }
+}
+
+class NewWidget extends StatelessWidget {
+  const NewWidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: 'English Calendar',
       theme: ThemeData(
@@ -29,7 +40,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const HomeScreen(), // Главный экран приложения
+      home: HomeScreen(), // Главный экран приложения
       debugShowCheckedModeBanner: false, // Убирает надпись "DEBUG" в углу
     );
   }
