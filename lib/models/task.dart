@@ -1,35 +1,29 @@
-class Flashcard {
-  final String id;
-  final String word;          // Слово на английском
-  final String translation;   // Перевод
-  final String? example;      // Пример использования (может быть пустым)
-  int reviewCount;            // Сколько раз повторили
-  DateTime nextReview;        // Когда следующее повторение
+class Task {
+  final String id;          // Уникальный номер задачи (чтобы отличать одну от другой)
+  final String title;       // Название задачи (например, "Выучить 10 слов")
+  final DateTime date;      // Дата и время задачи
+  bool isCompleted;         // Выполнена ли задача (галочка или нет)
 
-  Flashcard({
+  // Конструктор - это метод, который создает новый объект Task
+  Task({
     required this.id,
-    required this.word,
-    required this.translation,
-    this.example,
-    this.reviewCount = 0,
-    required this.nextReview,
+    required this.title,
+    required this.date,
+    this.isCompleted = false, // По умолчанию задача не выполнена
   });
 
-  Flashcard copyWith({
+  // Метод для копирования задачи (например, чтобы изменить только статус)
+  Task copyWith({
     String? id,
-    String? word,
-    String? translation,
-    String? example,
-    int? reviewCount,
-    DateTime? nextReview,
+    String? title,
+    DateTime? date,
+    bool? isCompleted,
   }) {
-    return Flashcard(
+    return Task(
       id: id ?? this.id,
-      word: word ?? this.word,
-      translation: translation ?? this.translation,
-      example: example ?? this.example,
-      reviewCount: reviewCount ?? this.reviewCount,
-      nextReview: nextReview ?? this.nextReview,
+      title: title ?? this.title,
+      date: date ?? this.date,
+      isCompleted: isCompleted ?? this.isCompleted,
     );
   }
 }
