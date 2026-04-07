@@ -49,9 +49,6 @@ dependencies:
   # Пакет для хранения данных на телефоне (локальная база данных)
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-  
-  # Пакет для иконок (стандартный, но убедимся, что он есть)
-  cupertino_icons: ^1.0.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
